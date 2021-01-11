@@ -1,3 +1,23 @@
 .footer {
   background-color: $color-footer;
 }
+.articles {
+  &__list {
+    list-style-type: none;
+  }
+}
+.social {
+  &__list {
+    list-style-type: none;
+  }
+}
+.links {
+  color: $color-text-footer;
+  text-decoration: none;
+}
+.copy {
+  color: $color-text-footer;
+  &__heart {
+    color: $color-icon-footer;
+  }
+}
