@@ -1,5 +1,12 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+  position: fixed;
+  top: 15px;
+  z-index: 10;
+  &__link {
+    background-color: $color-header;
+    width: 44px;
+    height: 44px;
+    margin: 0 94px 240px 0;
+    padding: 15px 14px;
+  }
 }
