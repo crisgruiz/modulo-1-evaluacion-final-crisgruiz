@@ -8,21 +8,48 @@
   align-items: center;
   @include normal-text() {
   }
+  @include tablet() {
+    height: 330px;
+    padding: 30px 39px 60px;
+  }
+  @include desktop() {
+    height: 360px;
+    padding: 60px 275px;
+  }
   &__pretitle {
     font-family: $font-text;
     font-size: 14px;
     font-weight: normal;
     line-height: 2.14;
     color: $color-insomnia;
+    @include tablet() {
+      line-height: 2.14;
+    }
+    @include desktop() {
+      font-size: 16px;
+      line-height: 1.88;
+    }
   }
   &__title {
     width: 290px;
+    height: 60px;
     margin: 1px 0 15px;
     font-family: $font-titles;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.25;
     color: $color-main-text;
+    @include tablet() {
+      width: 690px;
+      height: 45px;
+      font-size: 26px;
+      line-height: 1.73;
+    }
+    @include desktop() {
+      width: 730px;
+      font-size: 32px;
+      line-height: 1.41;
+    }
   }
   &__text {
     width: 290px;
@@ -32,6 +59,15 @@
     font-weight: normal;
     line-height: 1.67;
     color: $color-text-description;
+    @include tablet() {
+      width: 690px;
+      height: 60px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    @include desktop() {
+      width: 730px;
+    }
   }
   &__bottom {
     margin: 30px 214px 0 0;
@@ -46,6 +82,20 @@
       line-height: 2.25;
       text-align: center;
       color: $color-botton;
+      @include tablet() {
+        width: 91px;
+        padding: 10.5px 32.5px 10.5px 33.5px;
+      }
+      @include desktop() {
+        width: 160px;
+        padding: 10.5px 67px 10.5px 68px;
+      }
+    }
+    @include tablet() {
+      margin: 30px 599px 0 0;
+    }
+    @include desktop() {
+      margin: 30px 570px 0 0;
     }
   }
 }
