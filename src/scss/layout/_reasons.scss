@@ -4,26 +4,26 @@
   padding: 30px 15px 60px;
   background-color: $color-reasons;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
   justify-items: center;
   align-items: center;
   @include normal-text() {
   }
   text-align: center;
-  @include tablet() {
-    height: 397px;
-    padding: 30px 39px 60px 39px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-  }
-  @include desktop() {
-    height: 427px;
-    padding: 60px 84px 60px 81px;
-  }
+  // @include tablet() {
+  //   height: 397px;
+  //   padding: 30px 39px 60px 39px;
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   grid-template-rows: repeat(3, 1fr);
+  //   justify-items: center;
+  //   align-items: center;
+  // }
+  // @include desktop() {
+  //   height: 427px;
+  //   padding: 60px 84px 60px 81px;
+  // }
   &__title {
     height: 30px;
     font-family: $font-titles;
@@ -31,39 +31,37 @@
     font-weight: bold;
     line-height: 1.25;
     color: $color-main-text;
-    grid-column: 2 / 3;
-    @include tablet() {
-      height: 45px;
-      font-size: 26px;
-      line-height: 1.73;
-      grid-column: 1 / 4;
-      grid-row: 1 / 2;
-    }
-    @include desktop() {
-      font-size: 32px;
-      line-height: 1.41;
-    }
+    // @include tablet() {
+    //   height: 45px;
+    //   font-size: 26px;
+    //   line-height: 1.73;
+    //   grid-column: 1 / 4;
+    //   grid-row: 1 / 2;
+    // }
+    // @include desktop() {
+    //   font-size: 32px;
+    //   line-height: 1.41;
+    // }
   }
   &__items {
     margin: 45px 53px 0;
     line-height: 1.67;
     color: $color-main-text;
-    grid-column: 2 / 3;
     &--title {
       width: 184px;
       height: 30px;
       font-family: $font-titles;
       font-size: 18px;
       font-weight: bold;
-      @include tablet() {
-        width: 210px;
-        font-size: 24px;
-        line-height: 1.25;
-        margin: 14px 0px 0 0;
-      }
-      @include desktop() {
-        width: 350px;
-      }
+      // @include tablet() {
+      //   width: 210px;
+      //   font-size: 24px;
+      //   line-height: 1.25;
+      //   margin: 14px 0px 0 0;
+      // }
+      // @include desktop() {
+      //   width: 350px;
+      // }
     }
     &--text {
       width: 180px;
@@ -71,42 +69,43 @@
       font-family: $font-text;
       font-size: 18px;
       font-weight: normal;
-      @include tablet() {
-        width: 212.3px;
-        height: 68px;
-        font-size: 20px;
-        line-height: 1.5;
-      }
-      @include desktop() {
-        width: 353.8px;
-      }
-    }
-    &--item1 {
-      @include tablet() {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-      }
-    }
-    &--item2 {
-      @include tablet() {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-      }
-    }
-    &--item3 {
-      @include tablet() {
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-      }
+      //   @include tablet() {
+      //     width: 212.3px;
+      //     height: 68px;
+      //     font-size: 20px;
+      //     line-height: 1.5;
+      //   }
+      //   @include desktop() {
+      //     width: 353.8px;
+      //   }
+      // }
+      // &--item1 {
+      //   @include tablet() {
+      //     grid-column: 1 / 2;
+      //     grid-row: 2 / 3;
+      //   }
+      // }
+      // &--item2 {
+      //   @include tablet() {
+      //     grid-column: 2 / 3;
+      //     grid-row: 2 / 3;
+      //   }
+      // }
+      // &--item3 {
+      //   @include tablet() {
+      //     grid-column: 3 / 4;
+      //     grid-row: 2 / 3;
+      //   }
+      // }
     }
   }
   &__bottom {
     margin: 45px 53px 0;
-    grid-column: 2 / 3;
-    @include tablet() {
-      margin: 60px 27px 0 29px;
-      grid-row: 3 / 4;
-    }
+    // @include tablet() {
+    //   margin: 60px 27px 0 29px;
+    //   grid-column: 2 / 3;
+    //   grid-row: 3 / 4;
+    // }
 
     &--text {
       height: 45px;
@@ -119,12 +118,12 @@
       border-radius: 22.5px;
       background-color: $color-botton;
       padding: 12.5px 29.5px 12.5px 30.5px;
-      @include tablet() {
-        padding: 12.5px 42.5px 12.5px 43.5px;
-      }
-      @include desktop() {
-        padding: 12.5px 62px 12.5px 63px;
-      }
+      // @include tablet() {
+      //   padding: 12.5px 42.5px 12.5px 43.5px;
+      // }
+      // @include desktop() {
+      //   padding: 12.5px 62px 12.5px 63px;
+      // }
     }
   }
 }
