@@ -14,7 +14,7 @@
     &--title {
       width: 290px;
       height: 110px;
-      margin: 240px 15px 0px;
+      margin: 284px 15px 0px;
       text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
       font-family: $font-titles;
       font-size: 41px;
@@ -22,26 +22,56 @@
       text-align: center;
       color: $color-text-hero;
       text-transform: uppercase;
+      @include tablet() {
+        width: 690px;
+        height: 212px;
+        margin: 384px 39px 0;
+        font-size: 80px;
+        line-height: 1.33;
+      }
+      @include desktop() {
+        width: 730px;
+        height: 264px;
+        margin: 384px 275px 0;
+        font-size: 100px;
+        line-height: 1.32;
+      }
     }
     &--subtitle {
       width: 290px;
       height: 21px;
-      margin: 10px 0 40px 15px;
+      margin: 10px 15px 45px;
       font-family: $font-text;
       font-size: 16px;
       font-weight: normal;
       line-height: normal;
       text-align: center;
       color: $color-text-hero;
+      @include tablet() {
+        width: 360px;
+        height: 32px;
+        margin: 20px 204px 30px 204px;
+        font-size: 24px;
+      }
+      @include desktop() {
+        width: 730px;
+        margin: 0px 275px 30px 275px;
+      }
     }
   }
   &__icon {
     width: 45px;
     height: 45px;
-    margin: 0px 137px 0 138px;
+    margin: 0px 137px 53px 138px;
     padding: 18px 12px 15.3px 13px;
     border-radius: 22.5px;
     background-color: $color-text-hero;
+    @include tablet() {
+      margin: 0 322px 45px 318px;
+    }
+    @include tablet() {
+      margin: 0 617px 13px 618px;
+    }
     &--iconscroll {
       width: 20px;
       height: 11.7px;
