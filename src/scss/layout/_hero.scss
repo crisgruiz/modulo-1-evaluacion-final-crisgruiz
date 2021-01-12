@@ -4,4 +4,48 @@
   background-position: center;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    @include normal-text() {
+    }
+    &--title {
+      width: 290px;
+      height: 110px;
+      margin: 235px 15px 0px 15px;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+      font-family: $font-titles;
+      font-size: 42px;
+      line-height: 1.31;
+      text-align: center;
+      color: $color-text-hero;
+      text-transform: uppercase;
+    }
+    &--subtitle {
+      width: 290px;
+      height: 21px;
+      margin: 10px 0 40px 15px;
+      font-family: $font-text;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: normal;
+      text-align: center;
+      color: $color-text-hero;
+    }
+  }
+  &__icon {
+    width: 45px;
+    height: 45px;
+    margin: 0px 137px 0 138px;
+    padding: 18px 12px 15.3px 13px;
+    border-radius: 22.5px;
+    background-color: $color-text-hero;
+    &--iconscroll {
+      width: 20px;
+      height: 11.7px;
+      object-fit: contain;
+    }
+  }
 }
