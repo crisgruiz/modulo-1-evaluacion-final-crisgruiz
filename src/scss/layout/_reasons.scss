@@ -56,10 +56,9 @@
 }
 .reasons-bottom {
   text-decoration: none;
-  transition: color ease 1.5s, border ease 1.5s, background-color ease 1.5s;
+  transition: color ease 1.5s, background-color ease 1.5s;
   &:hover {
     color: $color-main-text;
-    border: $color-main-text 2px solid;
-    background-color: $color-description;
+    background-color: $color-header;
   }
 }
