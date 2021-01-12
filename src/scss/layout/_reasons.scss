@@ -4,7 +4,9 @@
   background-color: $color-reasons;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
   @include normal-text() {
   }
   text-align: center;
