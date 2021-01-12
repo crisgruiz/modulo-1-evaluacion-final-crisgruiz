@@ -1,3 +1,65 @@
 .reasons {
+  padding: 30px 15px 60px;
   background-color: $color-reasons;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  @include normal-text() {
+  }
+  text-align: center;
+  &__title {
+    height: 30px;
+    font-family: $font-titles;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    color: $color-main-text;
+  }
+  &__container {
+    margin: 0 53px;
+  }
+  &__items {
+    margin: 45px 0 0;
+    line-height: 1.67;
+    color: $color-main-text;
+    &--title {
+      width: 184px;
+      height: 30px;
+      font-family: $font-titles;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    &--text {
+      width: 180px;
+      height: 63px;
+      font-family: $font-text;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+  &__bottom {
+    margin: 45px 53px 0;
+    &--text {
+      height: 45px;
+      font-family: $font-text;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2.25;
+      text-align: center;
+      color: $color-text-botton;
+      border-radius: 22.5px;
+      background-color: $color-botton;
+      padding: 12.5px 29.5px 12.5px 30.5px;
+    }
+  }
+}
+.reasons-bottom {
+  text-decoration: none;
+  transition: color ease 1.5s, border ease 1.5s, background-color ease 1.5s;
+  &:hover {
+    color: $color-main-text;
+    border: $color-main-text 2px solid;
+    background-color: $color-description;
+  }
 }
