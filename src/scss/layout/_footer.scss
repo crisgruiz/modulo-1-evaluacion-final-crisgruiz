@@ -89,14 +89,14 @@
       justify-content: center;
       align-items: start;
     }
-    &--heart {
-      color: $color-icon-footer;
-    }
   }
 }
 .links {
   color: $color-text-footer;
   text-decoration: none;
+}
+.fas {
+  color: $color-icon-footer;
 }
 
 /*Animation*/
