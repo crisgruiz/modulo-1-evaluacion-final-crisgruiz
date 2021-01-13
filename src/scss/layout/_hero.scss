@@ -14,10 +14,11 @@
     &--title {
       width: 290px;
       height: 110px;
-      margin: 284px 15px 0px;
+      margin: 284px $margin-mobile 0px;
       text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
       font-family: $font-titles;
-      font-size: 41px;
+      font-size: 42px;
+      font-weight: bold;
       line-height: 1.31;
       text-align: center;
       color: $color-text-hero;
@@ -25,14 +26,14 @@
       @include tablet() {
         width: 690px;
         height: 212px;
-        margin: 384px 39px 0;
+        margin: 340px $margin-tablet 0;
         font-size: 80px;
         line-height: 1.33;
       }
       @include desktop() {
         width: 730px;
         height: 264px;
-        margin: 384px 275px 0;
+        margin: 340px $margin-desktop 0;
         font-size: 100px;
         line-height: 1.32;
       }
@@ -40,22 +41,22 @@
     &--subtitle {
       width: 290px;
       height: 21px;
-      margin: 10px 15px 45px;
+      margin: 10px $margin-mobile 45px;
       font-family: $font-text;
       font-size: 16px;
-      font-weight: normal;
       line-height: normal;
+      font-weight: normal;
       text-align: center;
       color: $color-text-hero;
       @include tablet() {
         width: 360px;
         height: 32px;
-        margin: 20px 204px 30px 204px;
+        margin: 20px 204px 30px;
         font-size: 24px;
       }
       @include desktop() {
         width: 730px;
-        margin: 0px 275px 30px 275px;
+        margin: 0px $margin-desktop 30px;
       }
     }
   }
@@ -69,7 +70,7 @@
     @include tablet() {
       margin: 0 322px 45px 318px;
     }
-    @include tablet() {
+    @include desktop() {
       margin: 0 617px 13px 618px;
     }
     &--iconscroll {

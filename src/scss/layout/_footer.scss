@@ -39,11 +39,9 @@
     }
   }
   &__articles {
-    // border: red 2px solid;
     margin: 60px 0 30px;
     font-family: $font-text;
     font-size: 16px;
-    font-weight: normal;
     line-height: 1.88;
     text-align: center;
     color: $color-text-footer;
@@ -59,10 +57,8 @@
     }
   }
   &__social {
-    // border: black 2px solid;
     font-family: $font-text;
     font-size: 16px;
-    font-weight: normal;
     line-height: 1.88;
     text-align: center;
     color: $color-text-footer;
@@ -78,14 +74,12 @@
     }
   }
   &__copy {
-    // border: rgb(133, 20, 238) 2px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: $font-text;
     font-size: 14px;
-    font-weight: normal;
     line-height: 2.14;
     text-align: center;
     color: $color-text-footer;
@@ -121,7 +115,7 @@
   }
 }
 .icon {
-  animation-duration: 4s;
+  animation-duration: 1.5s;
   animation-name: intro;
   animation-iteration-count: 1;
   // animation-timing-function: linear;

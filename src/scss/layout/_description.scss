@@ -1,7 +1,7 @@
 .description {
   width: 100%;
   height: 376px;
-  padding: 30px 15px 45px;
+  padding: 30px $margin-mobile 45px;
   background-color: $color-description;
   display: flex;
   flex-direction: column;
@@ -11,18 +11,18 @@
   }
   @include tablet() {
     height: 330px;
-    padding: 30px 39px 60px;
+    padding: 30px $margin-tablet 60px;
   }
   @include desktop() {
     height: 360px;
-    padding: 60px 275px;
+    padding: 60px $margin-desktop;
   }
   &__pretitle {
     font-family: $font-text;
     font-size: 14px;
-    font-weight: normal;
     line-height: 2.14;
     color: $color-insomnia;
+    text-transform: capitalize;
     @include tablet() {
       line-height: 2.14;
     }
@@ -40,6 +40,7 @@
     font-weight: bold;
     line-height: 1.25;
     color: $color-main-text;
+    text-transform: capitalize;
     @include tablet() {
       width: 690px;
       height: 45px;
@@ -57,7 +58,6 @@
     height: 120px;
     font-family: $font-text;
     font-size: 18px;
-    font-weight: normal;
     line-height: 1.67;
     color: $color-text-description;
     @include tablet() {
@@ -100,6 +100,9 @@
     }
   }
 }
+
+/*Transition*/
+
 .description-bottom {
   text-decoration: none;
   transition: color ease 1.5s, border-color ease 1.5s,

@@ -21,6 +21,7 @@
     font-weight: bold;
     line-height: 1.25;
     color: $color-main-text;
+    text-transform: capitalize;
     @include tablet() {
       height: 45px;
       font-size: 26px;
@@ -87,7 +88,6 @@
       height: 63px;
       font-family: $font-text;
       font-size: 18px;
-      font-weight: normal;
       @include tablet() {
         width: 212.3px;
         height: 68px;
@@ -100,11 +100,10 @@
     }
   }
   &__bottom {
-    margin: 45px 53px 30px;
+    margin: 45px 0 30px;
     @include tablet() {
       margin: 60px 27px 0 29px;
     }
-
     &--text {
       height: 45px;
       font-family: $font-text;
@@ -115,6 +114,7 @@
       color: $color-text-botton;
       border-radius: 22.5px;
       background-color: $color-botton;
+      text-transform: capitalize;
       padding: 12.5px 29.5px 12.5px 30.5px;
       @include tablet() {
         padding: 12.5px 42.5px 12.5px 43.5px;
@@ -125,6 +125,8 @@
     }
   }
 }
+
+/*Transition*/
 .reasons-bottom {
   text-decoration: none;
   transition: color ease 1.5s, background-color ease 1.5s;
