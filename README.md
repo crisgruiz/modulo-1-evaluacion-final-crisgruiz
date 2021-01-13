@@ -5,7 +5,7 @@ Realización del ejercicio final del módulo 1 del programa Adalab
 
 ## Enunciado
 
-El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado, con el fin de evaluar los conocimientos adqueridos durante el primer módulo del programa.
+El ejercicio consiste en desarrollar una página web de acuerdo a un diseño dado, con el fin de evaluar los conocimientos adquiridos durante el primer módulo del programa.
 
 - VS Code
 - Uso de Gulp mediante una base de código previamente definida (Adalab Web Starter Kit)
