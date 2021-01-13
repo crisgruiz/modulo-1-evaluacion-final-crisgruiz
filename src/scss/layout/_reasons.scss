@@ -3,16 +3,17 @@
   width: 100%;
   padding: 30px 15px 60px;
   background-color: $color-reasons;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
   @include normal-text() {
   }
   text-align: center;
   @include tablet() {
-    height: 397px;
-    padding: 30px 39px 60px 39px;
-  }
-  @include desktop() {
-    height: 427px;
-    padding: 60px 84px 60px 81px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
   &__title {
     height: 30px;
@@ -21,46 +22,32 @@
     font-weight: bold;
     line-height: 1.25;
     color: $color-main-text;
+    grid-row: 1 / 2;
     @include tablet() {
-      height: 45px;
-      font-size: 26px;
-      line-height: 1.73;
-    }
-    @include desktop() {
-      font-size: 32px;
-      line-height: 1.41;
+      grid-column: 2 / 3;
     }
   }
   &__items {
     margin: 0 53px 0;
     line-height: 1.67;
     color: $color-main-text;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    @include tablet() {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      justify-items: center;
-      align-items: center;
-    }
     &--item1 {
-      grid-row: 1 / 2;
+      grid-row: 2 / 3;
       @include tablet() {
         grid-column: 1 / 2;
       }
     }
     &--item2 {
-      grid-row: 2 / 3;
+      grid-row: 3 / 4;
       @include tablet() {
+        grid-row: 2 / 3;
         grid-column: 2 / 3;
       }
     }
     &--item3 {
-      grid-row: 3 / 4;
+      grid-row: 4 / 5;
       @include tablet() {
+        grid-row: 2 / 3;
         grid-column: 3 / 4;
       }
     }
@@ -71,15 +58,6 @@
       font-family: $font-titles;
       font-size: 18px;
       font-weight: bold;
-      @include tablet() {
-        width: 210px;
-        font-size: 24px;
-        line-height: 1.25;
-        margin: 14px 0px 0 0;
-      }
-      // @include desktop() {
-      //   width: 350px;
-      // }
     }
     &--text {
       width: 180px;
@@ -93,17 +71,14 @@
         font-size: 20px;
         line-height: 1.5;
       }
-      // @include desktop() {
-      //   width: 353.8px;
-      // }
     }
   }
   &__bottom {
     margin: 45px 53px 30px;
+    grid-row: 5 / 6;
     @include tablet() {
-      margin: 60px 27px 0 29px;
+      grid-column: 2 / 3;
     }
-
     &--text {
       height: 45px;
       font-family: $font-text;
@@ -115,12 +90,6 @@
       border-radius: 22.5px;
       background-color: $color-botton;
       padding: 12.5px 29.5px 12.5px 30.5px;
-      @include tablet() {
-        padding: 12.5px 42.5px 12.5px 43.5px;
-      }
-      // @include desktop() {
-      //   padding: 12.5px 62px 12.5px 63px;
-      // }
     }
   }
 }
