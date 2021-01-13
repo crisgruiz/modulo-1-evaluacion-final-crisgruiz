@@ -106,3 +106,24 @@
   color: $color-text-footer;
   text-decoration: none;
 }
+
+/*Animation*/
+
+@keyframes intro {
+  from {
+    opacity: 0.5;
+    background-color: $color-animation;
+    transform: rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    background-color: $color-text-hero;
+  }
+}
+.icon {
+  animation-duration: 4s;
+  animation-name: intro;
+  animation-iteration-count: 1;
+  // animation-timing-function: linear;
+  animation-timing-function: steps(10, end);
+}
