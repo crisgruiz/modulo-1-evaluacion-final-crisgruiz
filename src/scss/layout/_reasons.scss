@@ -1,14 +1,14 @@
 .reasons {
   height: 624px;
   width: 100%;
-  padding: 30px 15px 60px;
+  padding: 30px $margin-mobile 60px;
   background-color: $color-reasons;
   @include normal-text() {
   }
   text-align: center;
   @include tablet() {
     height: 397px;
-    padding: 30px 39px 60px 39px;
+    padding: 30px $margin-tablet 60px 39px;
   }
   @include desktop() {
     height: 427px;
@@ -26,10 +26,12 @@
       height: 45px;
       font-size: 26px;
       line-height: 1.73;
+      margin: 0 119px;
     }
     @include desktop() {
       font-size: 32px;
       line-height: 1.41;
+      margin: 0 191px 0 194px;
     }
   }
   &__items {
@@ -40,7 +42,7 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
-    align-items: center;
+    // align-items: center;
     @include tablet() {
       margin: 0;
       grid-template-columns: repeat(3, 1fr);
@@ -99,7 +101,7 @@
       }
     }
   }
-  &__bottom {
+  &__button {
     margin: 45px 0 30px;
     @include tablet() {
       margin: 60px 27px 0 29px;
@@ -111,9 +113,9 @@
       font-weight: 500;
       line-height: 2.25;
       text-align: center;
-      color: $color-text-botton;
+      color: $color-text-button;
       border-radius: 22.5px;
-      background-color: $color-botton;
+      background-color: $color-button;
       text-transform: capitalize;
       padding: 12.5px 29.5px 12.5px 30.5px;
       @include tablet() {
@@ -127,7 +129,7 @@
 }
 
 /*Transition*/
-.reasons-bottom {
+.reasons-button {
   text-decoration: none;
   transition: color ease 1.5s, background-color ease 1.5s;
   &:hover {

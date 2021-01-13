@@ -70,19 +70,19 @@
       width: 730px;
     }
   }
-  &__bottom {
+  &__button {
     margin: 30px 214px 0 0;
     &--text {
       width: 76px;
       padding: 10.5px 23px 10.5px 24px;
-      border: solid 2px $color-botton;
+      border: solid 2px $color-button;
       border-radius: 22.5px;
       font-family: $font-text;
       font-size: 20px;
       font-weight: 500;
       line-height: 2.25;
       text-align: center;
-      color: $color-botton;
+      color: $color-button;
       @include tablet() {
         width: 91px;
         padding: 10.5px 32.5px 10.5px 33.5px;
@@ -103,7 +103,7 @@
 
 /*Transition*/
 
-.description-bottom {
+.description-button {
   text-decoration: none;
   transition: color ease 1.5s, border-color ease 1.5s,
     background-color ease 1.5s;
