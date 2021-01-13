@@ -90,9 +90,6 @@
     text-align: center;
     color: $color-text-footer;
     margin-bottom: 45px;
-    &--heart {
-      color: $color-icon-footer;
-    }
     @include tablet() {
       width: 210px;
       display: flex;
@@ -105,4 +102,7 @@
 .links {
   color: $color-text-footer;
   text-decoration: none;
+}
+.fas {
+  color: $color-icon-footer;
 }
