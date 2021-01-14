@@ -1,3 +1,23 @@
+.pricing {
+  font-family: $font-titles;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  color: $color-pricing-text;
+  background-color: $color-footer;
+  text-align: center;
+  @include tablet() {
+    &__subtitle {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &--1 {
+        margin-right: 30px;
+      }
+    }
+  }
+}
 .reasons {
   height: 624px;
   width: 100%;
