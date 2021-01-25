@@ -1,6 +1,7 @@
 .header {
   position: fixed;
   top: 15px;
+  left: 0px;
   z-index: 10;
   &__link {
     background-color: $color-header;
